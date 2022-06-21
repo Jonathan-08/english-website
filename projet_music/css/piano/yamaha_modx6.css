@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
 
 fonts{
     font-family: 'Lobster', cursive;
@@ -40,12 +41,10 @@ header{
     justify-content: center; */
 }
 
-main h2{
-    text-align: center;
-    margin-top: 100px;
-    font-family: 'Gochi Hand', cursive;
-    font-size: 3em;
-    /* margin-bottom: 80px; */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo{
@@ -62,27 +61,38 @@ main h2{
     height: 80px;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
+.product-container{
+    display: flex;
+    justify-content: space space-around;
+    align-items: center;
 }
 
-.item{
-    display: inline-block;
-    margin: 50px;
+.product-info{
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.item p{
-    font-size: 1.3em;
+.product-img{
+    width: 500px;
 }
 
-.img-container{
-    width: 270px;
+.product-price{
+    font-size: 3em;
 }
 
-.price{
-    font-weight: 600;
-    margin-top: 15px;
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.add{
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #12bb96;
+    color: white;
 }
 
 footer{
@@ -115,6 +125,6 @@ footer{
     text-align: center;
 }
 
-#footer-p, footer h2{
+#footer-p, .central-title{
     font-family: 'Lobster', cursive;
 }
